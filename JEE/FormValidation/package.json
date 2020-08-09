@@ -1,0 +1,8 @@
+{
+    "name": "FormValidation",
+    "version": "1.0.0",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "author": "XME6301",
+    "contributors": [],
+    "dependencies": {}
+}

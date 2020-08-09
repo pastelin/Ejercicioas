@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<decorators defaultdir="/WEB-INF/decorator">
+
+    <decorator name="basic-theme2" page="basic-theme2.jsp">
+    
+        <pattern>/*.jsp</pattern>
+        <pattern>/*</pattern>
+            
+    </decorator>
+       
+    
+    
+    <decorator name="basic-theme" page="basic-theme.jsp">
+    
+        <pattern>/*.jsp</pattern>
+        <pattern>/**/*</pattern>    
+        
+    </decorator>
+    
+    
+        
+</decorators>

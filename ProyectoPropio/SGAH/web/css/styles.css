@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+    
+}
+
+/* Estilo para el ancho */ 
+
+.w-100{
+    width: 100%;
+}
+
+
+/* Estilo para el alto */ 
+
+.h-50p{
+    height: 50px;
+}
+
+
+h1{
+    font-size: 2em;
+}
+
+.p-absolute{
+    position: absolute;
+}
+
+.b-radius-10{
+    border-radius: 10px;
+}
+
+/* Estilo para los botones */ 
+
+.btn-2{
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.btn-2 a{
+    
+    text-decoration: none;
+    text-align: center;
+    margin-left: .2em;
+    padding: 5px;
+    width: 25%;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    
+}
+
+
+/* Estilo para los colores y fondo */ 
+
+.rgba-1{
+    background-color: rgb(155, 246, 255);
+}
+
+.rgba-2{
+    background-color: rgb(189, 178, 255);
+}
+
+.rgba-3{
+    background-color: rgb(255, 255, 252);
+}
+
+.rgba-4{
+    background-color: rgba(160, 196, 255);
+}
+
+
+/* Estilo para los bordes y relleno */ 
+
+.m-top-15{
+    margin-top: 15px;
+}
+
+.m-left-10{
+    margin-left: 10px; 
+}
+
+.p-2{
+    padding: 2px;
+}
+
+/* Centrado de texto e items */
+
+.text-center{
+    text-align: center;
+}
+
+.flex-center-x-y{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.flex-center-x{
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+.table-50{
+    
+    width: 50%;
+    margin-top: 50px;
+    
+}
+
+.cabecera-table{
+    
+    display: flex;
+    flex-direction: row;
+       
+}
+
+.cabecera{
+    
+    width: calc(100% / 5);
+    text-align: center;
+    margin-left: .2em;
+    background-color: rgb(155, 246, 255);
+    height: 20px;
+    font-weight: bold;
+    
+}
+
+
+/* Estilos para el template de la web */
+.container{
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 70px auto 50px;
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+        "b b b b b b b b b b b b"
+        "f f f f f f f f f f f f";
+    width: 100vw;
+    height: 100vh;
+}
+
+.header{
+    grid-area: h;
+
+
+}
+
+.body{
+    grid-area: b;
+    
+}
+
+.footer{
+    grid-area: f;
+    bottom: 0px;
+    font-weight: bold;
+}
+
+/* estilos para los botones de la cabecera */
+
+@media (orientation:landscape){
+    
+    
+    nav ul {
+        
+        
+        list-style-type: none;
+        display: flex;
+        height: 70px;
+        margin: 0;
+        padding: 0;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        
+    }
+    
+    nav li{
+        
+        width: 10%;
+            
+    }
+    
+    nav ul li a{
+        
+        display: block;
+        padding: .5em;
+        font-size: 1em;
+        color: black;
+        text-align: center;
+        background-color: rgb(255, 198, 255);
+        margin-left: 0.2em;
+        text-decoration: none;
+        border-radius: 10px;
+        font-weight: bold;
+        
+    }
+    
+    nav ul li a:hover{
+        
+        background-color: black;
+        text-decoration: none;
+        
+    }
+
+    
+    
+}
+
+
+@media (orientation:portrait){
+    nav ul{
+        list-style-type: none;
+        display: grid;
+        margin: 0px;
+        padding: 0px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 0.2em;
+        position: absolute;
+        width: 50%;
+        top: 50px;
+        left: 50%;
+        margin-top: -25px;
+
+    }
+
+    nav ul li a{
+	
+        display: block;
+        padding: .5em;
+        font-size: 1em;
+        color: black;
+        text-align: center;
+        background-color: rgb(255, 198, 255);
+        margin-left: 0.2em;
+        text-decoration: none;
+        border-radius: 10px;
+        font-weight: bold;
+        
+        
+    }
+    
+    nav ul li a:hover{
+	background-color: black;
+	text-decoration: none;
+    }
+
+}
+
