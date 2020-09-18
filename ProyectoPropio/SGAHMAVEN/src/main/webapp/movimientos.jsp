@@ -46,23 +46,56 @@
                     </a>
 
                     <h3>Agregar ahorro</h3>
-                    
-                    <form action="">
+
+                    <form action="" class="formulario" id="formulario">
+
                         <div class="contenedor-inputs">
-                        
-                            <label>Fecha</label>
-                            <input type="date">
-                            
-                            <label>Monto</label>
-                            <input type="monto">
-                            
-                            <label>Descripci&oacute;n</label>
-                            <textarea></textarea>
-                            
+
+                            <div class="formulario__grupo" id="grupo__fecha">
+
+                                <label for="fecha" class="formulario__label">Fecha</label>
+                                <input type="date" name="fecha" id="fecha" class="formulario__input">
+                                <p class="formulario__input-error">La fecha es un dato obligatorio</p>
+
+                            </div>
+
+                            <div class="formulario__grupo" id="grupo__monto">
+
+                                <label for="monto" class="formulario__label" >Monto</label>
+
+                                <div class="formulario__grupo-input">
+                                    <input type="text" class="formulario__input" id="monto" name="monto">
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+
+                                <p class="formulario__input-error">Por favor  </p>
+
+                            </div>
+
+                            <div class="formulario__grupo" id="grupo__monto">
+
+                                <label for="descripcion" class="formulario__label">Descripci&oacute;n</label>
+
+                                <textarea class="formulario__textarea" id="descripcion" name="descripcion"></textarea>
+
+                            </div>
+
                         </div>
-                            
-                        <input type="submit" class="btn-submit" value="Enviar">
+
+                        <div class="formulario__mensaje" id="formulario__mensaje">
+                            <p>
+                                <i class="fas fa-exclamation-triangle"></i> 
+                                <strong>Error</strong> Por favor rellena el formulario correctamente.
+                            </p>
+                        </div>
+
+                        <div class="formulario__grupo formulario__grupo-btn-enviar">
+                            <button type="submit" class="btn-submit">Enviar</button>
+                            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                        </div>
+
                         
+
                     </form>
 
                 </div>
