@@ -13,17 +13,17 @@ public class X {
         }
     
 }
-
-class Test{
-    
-    public static void main(String[] args) throws IOException{
-        
-        X xobj = new X();
-        
-            xobj.printFileContent(); // line 10
-            
-        
-        // line 11
-    }
-    
-}
+//
+//class Test{
+//    
+//    public static void main(String[] args) throws IOException{
+//        
+//        X xobj = new X();
+//        
+//            xobj.printFileContent(); // line 10
+//            
+//        
+//        // line 11
+//    }
+//    
+//}

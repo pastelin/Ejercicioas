@@ -89,15 +89,22 @@ public class LinkedListUs {
     }
     
     public static void main(String[] args) {
-    
-        LinkedList<String> linkedlist = new LinkedList<String>();
+
+        Node node = new Node(10);
         
-        linkedlist.add("Juan");
-        System.out.println("linkedlist = " + linkedlist);
+        LinkedListUs linkUs = new LinkedListUs(node);
         
-        linkedlist.add("Paco");
-        System.out.println("linkedlist = " + linkedlist);
+        linkUs.add(20);
         
+        linkUs.get(0);
+        
+//        LinkedList<String> linkedlist = new LinkedList<String>();
+
+//        linkedlist.add("Juan");
+//        System.out.println("linkedlist = " + linkedlist);
+
+//        linkedlist.add("Paco");
+//        System.out.println("linkedlist = " + linkedlist);
     }
     
     

@@ -17,8 +17,18 @@ public class LocalDateParse {
         System.out.println(date2);
         System.out.println(date3);
         
+        DateTimeFormatter f = DateTimeFormatter.ofPattern("MM dd yyyy");
+	LocalDate date = LocalDate.parse("01 02 2015", f);
         
+        System.out.println("date = " + date);
         
+        String newYorkDateTimePattern = "dd/MM/yyyy";
+DateTimeFormatter newYorkDateFormatter = DateTimeFormatter.ofPattern(newYorkDateTimePattern);
+LocalDate summerDay = LocalDate.of(2016, 7, 31);
+System.out.println(newYorkDateFormatter.format(summerDay));
+
+
+
     }
 
 

@@ -1,34 +1,68 @@
-* {
+ * {
     margin: 0;
     box-sizing: border-box;
     font-size: 1em;
 
 }
 
-/* Estilo para el ancho */ 
+/* width's' */ 
 
 .w-100{
     width: 100%;
 }
 
+.w-100-3 {
+    width: calc(100% / 6);
+}
 
-/* Estilo para el alto */ 
+/* height's' */ 
 
-.h-50p{
+.h-150 {
+    height: 150px;
+}
+
+.h-70p {
+    height: 70px;
+}
+
+.h-50p {
     height: 50px;
 }
 
-
-h1{
-    font-size: 2em;
+.h-45-lh-45 {
+    height: 45px;
+    line-height: 45px;
 }
 
-.p-absolute{
+.h-20p {
+    height: 20px;
+    line-height: 20px;
+}
+
+/* display's' */
+
+.dis-block {
+    display: block;
+}
+
+.dis-inline {
+    display: inline;
+}
+
+.p-absolute {
     position: absolute;
 }
 
-.b-radius-10{
-    border-radius: 10px;
+
+/* font-weight's' */
+
+.f-w-b {
+    font-weight: bold;
+}
+
+/* Tamano de titulos */
+h1 {
+    font-size: 2em;
 }
 
 /* Estilo para los botones */ 
@@ -56,7 +90,6 @@ h1{
 
 }
 
-
 /* Estilo para los colores y fondo */ 
 
 .rgba-1{
@@ -75,12 +108,27 @@ h1{
     background-color: rgb(255, 255, 252);
 }
 
-.rgba-4{
-    background-color: rgba(160, 196, 255);
+.rgb-boton-accion{
+    background-color: rgb(160, 196, 255);
 }
 
+.rgb-cabecera {
+    background-color: rgb(155, 246, 255);
+}
+
+.rgb-contenido {
+    background-color: rgba(234, 253, 255, 1);
+}
+
+.color-rojo {
+    color: red;
+}
 
 /* Estilo para los bordes y relleno */ 
+
+.b-radius-10 {
+    border-radius: 10px;
+}
 
 .m-top-15{
     margin-top: 15px;
@@ -90,58 +138,71 @@ h1{
     margin-left: 10px; 
 }
 
+.m-left-2 {
+    margin-left: .2em;
+}
+    
+
 .p-2{
     padding: 2px;
 }
 
+.p-0-40-0-10 {
+    padding: 0 40px 0 10px;
+}
+
 /* Centrado de texto e items */
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
-.flex-center-x-y{
+.text-right {
+    text-align: right;
+}
 
+.flex-center-x-y {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-.flex-center-x{
-
+.flex-center-x {
     display: flex;
     justify-content: center;
-
 }
 
-
-
-.table-50{
-
-    width: 50%;
+.table-50 {
+    width: 60%;
     margin-top: 50px;
-
 }
 
-.cabecera-table{
 
+/* Estilos para tablas */
+.cabecera-table{
     display: flex;
     flex-direction: row;
-
 }
 
-.cabecera{
-
-    width: calc(100% / 5);
+.contenido {
     text-align: center;
     margin-left: .2em;
-    background-color: rgb(155, 246, 255);
-    height: 20px;
-    font-weight: bold;
-
+    height: 30px;
+    line-height: 30px;
+    margin-top: 2px;
 }
 
+.sin-contenido {
+    height: 20px;
+    line-height: 20px;
+    margin-top: 2px;
+}
+
+/* Columnas por tabla */
+
+.columnas4 {
+    width: calc(100% / 4);
+}
 
 /* Estilos para el template de la web */
 .container{
@@ -159,13 +220,10 @@ h1{
 
 .header{
     grid-area: h;
-
-
 }
 
 .body{
     grid-area: b;
-
 }
 
 .footer{
@@ -178,10 +236,7 @@ h1{
 
 @media (orientation:landscape){
 
-
     nav ul {
-
-
         list-style-type: none;
         display: flex;
         height: 70px;
@@ -190,17 +245,13 @@ h1{
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-
     }
 
-    nav li{
-
+    nav li {
         width: 10%;
-
     }
 
-    nav ul li a{
-
+    nav ul li a {
         display: block;
         padding: .5em;
         font-size: 1em;
@@ -211,14 +262,11 @@ h1{
         text-decoration: none;
         border-radius: 10px;
         font-weight: bold;
-
     }
 
     nav ul li a:hover{
-
         background-color: rgb(255, 198, 255);
         text-decoration: none;
-
     }
 
 
@@ -388,7 +436,6 @@ h1{
 /* Validaciones */
 
 .formulario__label {
-    display: block;
     font-weight: 700;
     padding: 10px;
     cursor: pointer;
@@ -398,25 +445,17 @@ h1{
     position: relative;
 }
 
-.formulario__input, .formulario__textarea {
-    width: 100%;
+.formulario__input, .formulario__textarea, .formulario__select {
     background: #fff;
     border: 3px solid transparent;
     border-radius: 3px;
-    height: 45px;
-    line-height: 45px;
-    padding: 0 40px 0 10px;
     transition: .3s ease all;
 }
 
-.formulario__input:focus, .formulario__textarea:focus {
+.formulario__input:focus, .formulario__textarea:focus, .formulario__select:focus {
     border: 3px solid #BBBBBB;
     outline: none;
     box-shadow:  3px 0px 30px rgba(163,163,163, 0.4);
-}
-
-.formulario__textarea {
-    height: 150px;
 }
 
 .formulario__input-error {
@@ -436,4 +475,66 @@ h1{
     z-index: 100;
     font-size: 16px;
     opacity: 0; 
+}
+
+.formulario__mensaje {
+
+    height: 45px; 
+    line-height: 45px;
+    background: #F66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+
+}
+
+.formulario__mensaje-activo {
+
+    display: block;
+
+}
+
+.formulario__mensaje-exito {
+
+    font-size: 14px;
+    color: #119200;
+    display: none;
+
+}
+
+.formulario__mensaje-exito-activo {
+
+    display: block;
+
+}
+
+.formulario__grupo-btn-enviar {
+
+    margin-top: 10px;
+
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado{
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label{
+    color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado{
+    color: #bb2929;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input{
+    border: 3px solid #bb2929;
+}
+
+.container-table {
+    max-width: 100%;
+    max-height: 300px;
+    overflow: auto; 
 }

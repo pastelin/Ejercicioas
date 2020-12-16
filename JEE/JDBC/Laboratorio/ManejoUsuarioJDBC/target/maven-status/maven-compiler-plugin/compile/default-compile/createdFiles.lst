@@ -1,0 +1,4 @@
+datos\Conexion.class
+datos\UsuarioJDBC.class
+domain\Usuario.class
+test\ManejoUsuarioJDBC.class
