@@ -1,0 +1,292 @@
+/* Estilos para el template de la web */
+.container{
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 70px auto 50px;
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+        "b b b b b b b b b b b b"
+        "f f f f f f f f f f f f";
+    width: 100vw;
+    height: 100vh;
+}
+
+.header{
+    grid-area: h;
+}
+
+.body{
+    grid-area: b;
+}
+
+.footer{
+    grid-area: f;
+    bottom: 0px;
+    font-weight: bold;
+}
+
+/* estilos para los botones de la cabecera */
+
+@media (orientation:landscape){
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        height: 70px;
+        margin: 0;
+        padding: 0;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav li {
+        width: 10%;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: .5em;
+        font-size: 1em;
+        color: black;
+        text-align: center;
+        border: 2px solid rgb(255, 198, 255);
+        margin-left: 0.2em;
+        text-decoration: none;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
+    nav ul li a:hover{
+        background-color: rgb(255, 198, 255);
+        text-decoration: none;
+    }
+
+
+
+}
+
+
+@media (orientation:portrait){
+    nav ul{
+        list-style-type: none;
+        display: grid;
+        margin: 0px;
+        padding: 0px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 0.2em;
+        position: absolute;
+        width: 50%;
+        top: 50px;
+        left: 50%;
+        margin-top: -25px;
+
+    }
+
+    nav ul li a{
+
+        display: block;
+        padding: .5em;
+        font-size: 1em;
+        color: black;
+        text-align: center;
+        border: 2px solid rgb(255, 198, 255);
+        margin-left: 0.2em;
+        text-decoration: none;
+        border-radius: 10px;
+        font-weight: bold;
+
+
+    }
+
+    nav ul li a:hover{
+        background-color: black;
+        text-decoration: none;
+    }
+
+}
+
+/* Estilo para los botones */ 
+
+.btn-2{
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.btn-2 button{
+
+    border:none;
+    text-align: center;
+    margin-left: .2em;
+    padding: 5px;
+    width: 25%;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 12px;
+
+}
+
+.container-table {
+    max-width: 100%;
+    max-height: 300px;
+    overflow: auto; 
+}
+
+/* Estilos para tablas */
+.cabecera-table{
+    display: flex;
+    flex-direction: row;
+}
+
+.contenido {
+    text-align: center;
+    margin-left: .2em;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 2px;
+}
+
+.sin-contenido {
+    height: 20px;
+    line-height: 20px;
+    margin-top: 2px;
+}
+
+/* Columnas por tabla */
+
+.columnas4 {
+    width: calc(100% / 4);
+}
+
+/* font-weight's' */
+
+.f-w-b {
+    font-weight: bold;
+}
+
+
+.rgba-3{
+    background-color: rgb(255, 255, 252);
+}
+
+.rgb-boton-accion{
+    background-color: rgb(160, 196, 255);
+}
+
+.rgb-cabecera {
+    background-color: rgb(155, 246, 255);
+}
+/* width's' */ 
+
+.w-100{
+    width: 100%;
+}
+
+.w-100-3 {
+    width: calc(100% / 6);
+}
+
+/* height's' */ 
+
+.h-150 {
+    height: 150px;
+}
+
+.h-70p {
+    height: 70px;
+}
+
+.h-50p {
+    height: 50px;
+}
+
+.h-45-lh-45 {
+    height: 45px;
+    line-height: 45px;
+}
+
+.h-20p {
+    height: 20px;
+    line-height: 20px;
+}
+
+/* display's' */
+
+.dis-block {
+    display: block;
+}
+
+.dis-inline {
+    display: inline;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+
+/* Tamano de titulos */
+h1 {
+    font-size: 2em;
+}
+
+/* Estilo para los bordes y relleno */ 
+
+.b-radius-10 {
+    border-radius: 10px;
+}
+
+.m-top-15{
+    margin-top: 15px;
+}
+
+.m-left-10{
+    margin-left: 10px; 
+}
+
+.m-left-2 {
+    margin-left: .2em;
+}
+
+
+.p-2{
+    padding: 2px;
+}
+
+.p-0-40-0-10 {
+    padding: 0 40px 0 10px;
+}
+
+/* Centrado de texto e items */
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.flex-center-x-y {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center-x {
+    display: flex;
+    justify-content: center;
+}
+
+.table-50 {
+    width: 60%;
+    margin-top: 50px;
+}
+

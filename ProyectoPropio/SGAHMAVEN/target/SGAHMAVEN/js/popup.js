@@ -34,5 +34,22 @@
         
     });
     
+    /* Funcionamiento para el popup ahorrar */
+    let btnAbrirPopupPrestamo = document.getElementById('btn-abrir-prestamo'),
+            overlayPrestamo = document.getElementById('overlay-prestamo'),
+            popupPrestamo = document.getElementById('popup-prestamo'),
+            btnCerrarPopupPrestamo = document.getElementById('btn-cerrar-popup-prestamo');
+            
+    btnAbrirPopupPrestamo.addEventListener('click', function () {
+        overlayPrestamo.classList.add('active'); 
+        popupPrestamo.classList.add('active');
+    });
+    
+    btnCerrarPopupPrestamo.addEventListener('click', function () {
+        overlayPrestamo.classList.remove('active');
+        popupPrestamo.classList.remove('active');
+        
+    });
+    
     
 }());

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<decorators defaultdir="/jsp/decorators">
+<decorators defaultdir="/WEB-INF/paginas/decorators">
 
     <decorator name="theme-template" page="theme-template.jsp">
         <pattern>/*</pattern>
-        <pattern>/*</pattern>
+        <pattern>/SGAHMAVEN/jsp/*</pattern>
     </decorator>
 
 </decorators>

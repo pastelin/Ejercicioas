@@ -7,7 +7,8 @@ import mx.com.sgah.excepciones.AccesoDatosEx;
  * Contiene las operaciones a ejecutar en base de datos
  *
  * @author Juan pastelin Brioso
- * @version 1.0
+ * @version 1.1
+ * @param <T>
  */
 public interface AccesoDatosMovimientosDao<T> {
 
@@ -47,13 +48,13 @@ public interface AccesoDatosMovimientosDao<T> {
     public abstract List<T> listar() throws AccesoDatosEx;
 
     /**
-     * Lista registros que coincidan con la busqueda
+     * Lista el registro que coincida con el id
      *
      * @param t objeto a buscar
-     * @return lista de registrs hallados
+     * @return lista de registro hallado
      * @throws mx.com.sgah.excepciones.AccesoDatosEx
      */
-    public abstract List<T> bustar(T t) throws AccesoDatosEx;
+    public abstract T encontrar(T t) throws AccesoDatosEx;
 
   
     

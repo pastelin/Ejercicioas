@@ -7,7 +7,7 @@
 
   <body>
 
-    <div class="table-50" id="body">
+    <div class="table-50" id="contenido">
         <article>
             <h1 class="text-center">Articulos</h1>
             

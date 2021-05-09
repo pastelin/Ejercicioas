@@ -36,5 +36,13 @@ public interface CatalogoMovimientosDao<T> {
      */
     public abstract List<T> listarMovimiento();
     
+    /**
+     * Metodo abstracto para llamar al metodo de  encontrar registro en bd
+     * 
+     * @param t
+     * @return lista de registros encontrados en bd 
+     */
+    public abstract T encontrar(T t);
+    
     
 }

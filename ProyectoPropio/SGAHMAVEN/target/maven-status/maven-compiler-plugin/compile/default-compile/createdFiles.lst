@@ -1,9 +1,7 @@
 mx\com\sgah\negocio\interfaz\CatalogoMovimientosDao.class
 mx\com\sgah\datos\conexion\Conexion.class
 mx\com\sgah\datos\implementacion\AccesoDatosMovimientosDaoImpl.class
-mx\com\sgah\presentacion\AhorroController.class
 mx\com\sgah\excepciones\BorrarDatosEx.class
-mx\com\sgah\presentacion\GastoController.class
 mx\com\sgah\datos\interfaz\AccesoDatosMovimientosDao.class
 mx\com\sgah\presentacion\MovimientoController.class
 mx\com\sgah\negocio\implementacion\CatalogoMovimientoImpl.class

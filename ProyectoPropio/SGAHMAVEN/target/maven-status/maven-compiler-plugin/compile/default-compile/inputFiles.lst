@@ -1,6 +1,5 @@
 C:\Cursos\JAVA\ProyectoPropio\SGAHMAVEN\src\main\java\mx\com\sgah\datos\interfaz\AccesoDatosMovimientosDao.java
 C:\Cursos\JAVA\ProyectoPropio\SGAHMAVEN\src\main\java\mx\com\sgah\datos\implementacion\AccesoDatosMovimientosDaoImpl.java
-C:\Cursos\JAVA\ProyectoPropio\SGAHMAVEN\src\main\java\mx\com\sgah\presentacion\AhorroController.java
 C:\Cursos\JAVA\ProyectoPropio\SGAHMAVEN\src\main\java\mx\com\sgah\negocio\interfaz\CatalogoMovimientosDao.java
 C:\Cursos\JAVA\ProyectoPropio\SGAHMAVEN\src\main\java\mx\com\sgah\presentacion\ArticuloController.java
 C:\Cursos\JAVA\ProyectoPropio\SGAHMAVEN\src\main\java\mx\com\sgah\presentacion\MovimientoController.java
@@ -9,7 +8,6 @@ C:\Cursos\JAVA\ProyectoPropio\SGAHMAVEN\src\main\java\mx\com\sgah\dominio\Movimi
 C:\Cursos\JAVA\ProyectoPropio\SGAHMAVEN\src\main\java\mx\com\sgah\datos\conexion\Conexion.java
 C:\Cursos\JAVA\ProyectoPropio\SGAHMAVEN\src\main\java\mx\com\sgah\excepciones\LecturaDatosEx.java
 C:\Cursos\JAVA\ProyectoPropio\SGAHMAVEN\src\main\java\mx\com\sgah\excepciones\AccesoDatosEx.java
-C:\Cursos\JAVA\ProyectoPropio\SGAHMAVEN\src\main\java\mx\com\sgah\presentacion\GastoController.java
 C:\Cursos\JAVA\ProyectoPropio\SGAHMAVEN\src\main\java\mx\com\sgah\excepciones\EscrituraDatosEx.java
 C:\Cursos\JAVA\ProyectoPropio\SGAHMAVEN\src\main\java\mx\com\sgah\negocio\localdateformatter\LocalDateFormatter.java
 C:\Cursos\JAVA\ProyectoPropio\SGAHMAVEN\src\main\java\mx\com\sgah\negocio\implementacion\CatalogoMovimientoImpl.java

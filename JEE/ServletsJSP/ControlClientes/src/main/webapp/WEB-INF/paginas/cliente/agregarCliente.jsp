@@ -16,28 +16,25 @@
                         <label for="nombre">Nombre</label>
                         <input type="text" class="form-control" name="nombre" required />
                     </div>
-                </div>
-                <div class="modal-body">
+                
                     <div class="form-group">
                         <label for="apellido">Apellido</label>
                         <input type="text" class="form-control" name="apellido" required />
                     </div>
-                </div>
-                <div class="modal-body">
+                
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" class="form-control" name="email" required />
                     </div>
-                </div>
-                <div class="modal-body">
+                
                     <div class="form-group">
                         <label for="telefono">Tel&eacute;fono</label>
                         <input type="tel" class="form-control" name="telefono" required />
                     </div>
-                </div><div class="modal-body">
+                
                     <div class="form-group">
                         <label for="saldo">Saldo</label>
-                        <input type="number" class="form-control" name="saldo" required />
+                        <input type="number" class="form-control" name="saldo" step="any" required />
                     </div>
                 </div>
                 
